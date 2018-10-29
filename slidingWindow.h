@@ -39,7 +39,7 @@ void sendFrames(Sliding_Window sw, int frame_count){
 	}
 
 	// validate LFS - LAR <= SWS
-	if( (LFS(sw) + frame_count) > (SWS(sw) + LAR(sw)) {
+	if( (LFS(sw) + frame_count) > (SWS(sw) + LAR(sw)) ) {
 		frame_count = SWS(sw) + LAR(sw) - LFS(sw);
 	}
 

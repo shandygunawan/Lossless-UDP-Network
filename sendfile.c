@@ -8,6 +8,8 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include "data.h"
+#include "dataHandler.cpp"
+#include "slidingWindow.h"
 
 int main(int argc, char *argv[]) {
 
@@ -44,11 +46,6 @@ int main(int argc, char *argv[]) {
 	client_address.sin_family = AF_INET; //IPv4
 	client_address.sin_port = htons(dest_port);
 	client_address.sin_addr.s_addr = inet_addr(dest_IP);
-
-	
-
-
-
 
 	return 0;
 }

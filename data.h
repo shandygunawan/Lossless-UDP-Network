@@ -3,7 +3,7 @@
 
 // DATA STRUCTURE
 // Frame
-struct packet {
+struct Packet {
     char SOH;
     int sequenceNumber;
     int dataLength;
@@ -12,7 +12,7 @@ struct packet {
 };
 
 // ACK
-struct response {
+struct Response {
     char ACK;
     int nextSequenceNumber;
     char checksum;
